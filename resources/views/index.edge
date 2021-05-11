@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delivery</title>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body{
+            background-color: #eee;
+        }
+
+        .content{
+            background-color: #fff;
+            margin: auto;
+            max-width: 600px;
+            min-height: 100vh;
+            box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+        }
+
+        .header{
+            padding: 40px 10px 40px 10px;
+            background-color: #efefef;
+        }
+
+        .header h4{
+            font-weight: 300;
+        }
+
+        .header img{
+            width: 80px;
+            height: 80px;
+        }
+
+        .main ul{
+            width: 100%;
+            padding: 20px;
+        }
+
+        .main ul li{
+            border-left: 7px solid #21AA2D;
+            display: flex;
+            align-self: center;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #E1FFF1;
+            flex-direction: column;
+            text-align: left; 
+            cursor: pointer;
+        }
+
+        .title{
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .topnav{
+            background-color: #3E9979;
+            color: white;
+            padding: 7px;
+            font-size: 20px;
+        }
+
+        .bottom-menu{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .tab{
+            background-color: #46AE89;
+        }
+
+        .tab *{
+            color: white !important;
+        }
+        .active-tab{
+            background-color: #3E9979;
+        }
+    </style>
+</head>
+<body>
+    <div class="content center">
+        <div class="topnav">Home</div>
+        <div class="header">
+            <img src="/images/osaka.png" alt="">
+            <h4>Osaka Controle de Pragas e Desentupimento</h4>
+            <p><a href="">(11) 94703 9104</a></p>
+            <a class="waves-effect waves-light btn-small">Aberto Agora</a>
+        </div>
+        <div class="main">
+            <ul>
+                <li onclick="location.href='#';">
+                    <span class="title">Dedetização</span>
+                    <span class="desc">Peça um Orçamento</span>
+                </li>
+                <li>
+                    <span class="title">Desentupimento</span>
+                    <span class="desc">Peça um Orçamento</span>
+                </li>
+                <li>
+                    <span class="title">Limpeza de Fossa</span>
+                    <span class="desc">Peça um Orçamento</span>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-menu">
+            <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                <li class="tab active-tab"><a target="_self" href="" class="active">Inicio</a></li>
+                <li class="tab"><a target="_self" href="">Contato</a></li>
+                <li class="tab"><a target="_self" href="">Horários</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.tabs').tabs();
+    });
+</script>
+</body>
+</html>
